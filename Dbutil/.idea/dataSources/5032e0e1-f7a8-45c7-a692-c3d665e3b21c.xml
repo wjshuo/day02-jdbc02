@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost [2]">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="Demo">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="lanou">
+      <visible>1</visible>
+    </schema>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="mysqlDay02"/>
+    <schema id="6" name="mysqlDay03"/>
+    <schema id="7" name="mysqlDay04"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="sys"/>
+    <schema id="10" name="Test01"/>
+    <schema id="11" name="users">
+      <visible>1</visible>
+    </schema>
+    <table id="12" parent="1" name="emp"/>
+    <table id="13" parent="1" name="stu"/>
+    <table id="14" parent="3" name="DEPT"/>
+    <table id="15" parent="3" name="EMP"/>
+    <table id="16" parent="3" name="salgrade"/>
+    <table id="17" parent="3" name="year"/>
+    <table id="18" parent="11" name="user"/>
+    <column id="19" parent="12" name="empno">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="20" parent="12" name="ename">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="21" parent="12" name="job">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="22" parent="12" name="mgr">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="23" parent="12" name="hiredate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="24" parent="12" name="sal">
+      <data-type>decimal(7,2)|0</data-type>
+    </column>
+    <column id="25" parent="12" name="comm">
+      <data-type>decimal(7,2)|0</data-type>
+    </column>
+    <column id="26" parent="12" name="deptno">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="27" parent="13" name="sid">
+      <data-type>char(6)|0</data-type>
+    </column>
+    <column id="28" parent="13" name="sname">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="29" parent="13" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="30" parent="13" name="gender">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="31" parent="14" name="DEPTNO">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="14" name="DNAME">
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="33" parent="14" name="LOC">
+      <data-type>varchar(13)|0</data-type>
+    </column>
+    <key id="34" parent="14" name="PRIMARY">
+      <columns>DEPTNO</columns>
+      <primary>1</primary>
+    </key>
+    <column id="35" parent="15" name="EMPNO">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="36" parent="15" name="ENAME">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="37" parent="15" name="JOB">
+      <data-type>varchar(9)|0</data-type>
+    </column>
+    <column id="38" parent="15" name="MGR">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="39" parent="15" name="HIREDATE">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="40" parent="15" name="SAL">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="41" parent="15" name="COMM">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="42" parent="15" name="DEPTNO">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="43" parent="15" name="PRIMARY">
+      <columns>EMPNO</columns>
+      <primary>1</primary>
+    </key>
+    <column id="44" parent="16" name="grade">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="45" parent="16" name="from">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="46" parent="16" name="to">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="47" parent="17" name="year">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="48" parent="17" name="profit">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="49" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="50" parent="18" name="name">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="51" parent="18" name="password">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="52" parent="18" name="info">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <key id="53" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
